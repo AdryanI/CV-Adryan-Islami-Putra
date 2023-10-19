@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body{
+        background: #000;
+        min-height: 200vh;
+      }
+
+      header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 5px 15px;    
+        z-index: 3;
+        background-color: #fff;
+      }
+
+      header .sticky{
+        padding: 5px 100px;
+        background: #fff;
+      }
+
+      header .logo{
+         position: relative;
+         font-weight: 700;
+         text-decoration: none;
+         font-size: 2em;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         transition: 0.6s;
+      }
+
+      header ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header ul li{
+        position: relative;
+        list-style: none;
+      }
+
+      header ul li a{
+        position: relative;
+        margin: 0 15px;
+        top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        color: rgba(32, 188, 232, 0.621);
+        letter-spacing: 2px;
+        font-weight: 500px;
+        transition: 0.6s;
+      }
+
+    #home{
+        padding: 270px;
+      }
+
+    section{
+      background-color: rgba(32, 188, 232, 0.621);
+      background-size: cover;
+    }
+
+    .pre-title {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #656d72;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+  }
+
+  .pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #d9d9d9;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+  }
+
+  .hero-name {
+    font-size: 50px;
+  }
+
+  span{
+    color: #fff;
+  }
+
+    </style>
+
+    <title>Yan Portofolio</title>
+</head>
+<body style="background: #fff;">
+    <!-- navbar -->
+    <header>
+      <a href="#home" class="logo" style="color: rgba(32, 188, 232, 0.621);"><i class="fa-solid fa-code" style="color: #20bce8;"></i> Yan Portofolio</a>
+      <ul>
+        <li><a href="#content">PROJECT</a></li>
+        <li><a href="#SKILL">SKILL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </header>
+    <section class="banner"></section>
+      
+    <!-- benner -->
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col" style="margin-top: 65px;" data-aos="fade-right">
+            <h4 class="pre-title" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">My name is</h4>
+            <h1 class="hero-name">Adryan <span>Islami </span>Putra</h1>
+            <h5>I'm <span>Front-end</span> Developer</h5>
+          </div>
+          <div class="col" data-aos="fade-left">
+            <img src="./IMG/Desain tanpa judul (1).png" width="300" style="border-radius: 25px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content -->
+    <h6 id="content"></h6><br><br>
+      <div class="container text-center" >
+        <h1 data-aos="fade-up"style="margin-top:20px; color: rgba(32, 188, 232, 0.621);">PROJECT</h1> <br>
+        <div class="row">
+          <div class="col" data-aos="fade-up">
+            <div class="card mb-3" style="width: 18rem;">
+                <img src="./IMG/Web Ikan.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Ini merupakan web pertama saya menjelaskan tentang Ikan</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col" data-aos="fade-up">
+            <div class="card" style="width: 18rem;">
+                <img src="./IMG/Web Project F.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Ini merupakan Project tentang membuat website dengan tema travel</p>
+                </div>
+              </div>
+          </div>
+          <div class="col" data-aos="fade-up">
+            <div class="card" style="width: 18rem;">
+                <img src="./IMG/Login.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Ini merupakan Project tentang membuat login menggunakan HTML + CSS</p>
+                </div>
+              </div>
+          </div>
+          <div class="col" data-aos="fade-up">
+            <div class="card" style="width: 18rem;">
+                <img src="./IMG/Figma NTGG.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Project tentang membuat apk pada desain Iphone di Figma</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row" data-aos="fade-up">
+          <div class="col" >
+            <div class="card mb-3" style="width: 18rem;">
+                <img src="./IMG/Login Figma.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Ini merupakan Project membuat halaman login menggunakan Figma</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="./IMG/Mockup detain barang.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Project membuat Mockup tentang detail suatu barang yang akan di beli</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="./IMG/Konsep Web Sekolah.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"> Project membuat Konsep Morkup untuk Web Sekolah menggunakan Figma</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="./IMG/Project Membuat tampilan untuk profile.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Project membuat progress skill menggunakan filter blur dengan HTML + CSS </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- progress -->
+      <h6 id="SKILL"></h6> <br> <br>
+      <center><h1 data-aos="fade-up"  style="color: rgba(32, 188, 232, 0.621);">SKILLS</h1></center>
+      <div  class="container text-center mb-3" data-aos="fade-up">
+        <div class="row" >
+          <ul class="list-group" style="box-shadow: 5px 10px #656d72;" >
+            <li class="list-group-item bg-info" aria-current="true" style="color: #fff;">SKILL PROGRAMMING LANGUAGE</li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 80%">HTML 80%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning" style="width: 60%">CSS 60%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 30%">PHP 30%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 15%">Java Script 15%</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+
+      <div class="container text-center mb-3" id="UI/UX DESIGN">
+        <div class="row">
+          <ul class="list-group"  style="box-shadow: 5px 10px #656d72;" data-aos="fade-up">
+            <li class="list-group-item bg-info" aria-current="true" style="color: #fff;">UI/UX DESIGN</li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">FIGMA 90%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">Canva 90%</div>
+              </div>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 20%">Photoshop 20%</div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <br>
+
+      <div class="container text-center mb-3" id="LANGUAGE">
+        <div class="row">
+          <ul class="list-group"  style="box-shadow: 5px 10px #656d72;" data-aos="fade-up">
+            <li class="list-group-item bg-info" aria-current="true" style="color: #fff;">LANGUAGE</li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%">Bahasa Indonesia 90%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 80%">English 80%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 10%">Jepang 10%</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+
+      <div class="container text-center mb-3" id="OFFICE">
+        <div class="row">
+          <ul class="list-group"  style="box-shadow: 5px 10px #656d72;" data-aos="fade-up"> 
+            <li class="list-group-item bg-info" aria-current="true" style="color: #fff;">SKILL OFFICE</li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 80%">MS.WORD 80%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning" style="width: 60%">EXCEL 70%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning" style="width: 55%">Power Point 55%</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#20bce89e" fill-opacity="1" d="M0,64L40,101.3C80,139,160,213,240,202.7C320,192,400,96,480,80C560,64,640,128,720,138.7C800,149,880,107,960,122.7C1040,139,1120,213,1200,218.7C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      <footer class="text-center text-lg-start bg-light text-muted"> 
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="margin-top: -75px; z-index: 2;">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block" >
+      <span>Social Media:</span>
+    </div>
+    <!-- Left -->
+    <!-- Right -->
+    <div>
+      <a href="https://wa.me/085157022467" class="me-4 text-reset">
+        <i class="fa-brands fa-whatsapp" style="color: #fff;"></i>
+      </a>
+      <a href="https://instagram.com/adryan_xii.css?igshid=NGVhN2U2NjQ0Yg==" class="me-4 text-reset">
+        <i class="fab fa-instagram" style="color: #fff;"></i>
+      </a>
+      <a href="https://www.facebook.com/adryan.i.putra.1?mibextid=ZbWKwL" class="me-4 text-reset">
+        <i class="fab fa-facebook-f" style="color: #fff;"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="" id="contact" style="padding-top: 10px;">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4" >
+            <i class="fa-solid fa-user"></i>  About Me
+          </h6>
+          <p>
+            Hello i'm Adryan Islami Putra, I from SMK Plus Pelita Nusantara Bogor, I am a Front End Developer and Web Designer
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa-solid fa-screwdriver-wrench" ></i> Tools
+          </h6>
+          <p>
+            <a href="#!" class="text-reset" style="text-decoration: none;">VScode</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="text-decoration: none;">Figma</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="text-decoration: none;">Premiere Pro</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset" style="text-decoration: none;">Microsoft Office</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa-solid fa-link"></i>
+            Useful links
+          </h6>
+          <p>
+            <a href="https://drive.google.com/file/d/1xzD_aqM_O85-XxW1jGhNQTdfRBMfELkB/view?usp=sharing" class="text-reset">CV</a>
+          </p>
+          <p>
+            <a href="https://github.com/AdryanI/YanChanUwU" class="text-reset">Github</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4"><i class="fa-regular fa-address-card"></i> Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Bojong Gede, Bogor </p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            adryanislamiputra@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 62 851 5702 2467</p>
+          <p><i class="fas fa-print me-3"></i> + 62 812 8964 3790</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
